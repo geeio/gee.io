@@ -1,13 +1,9 @@
-.PHONY: deploy deploy-api deploy-static setup
+.PHONY: deploy setup icons
 
 setup:
 	git remote add gh git@github.com:geeio/geeio.github.io.git
 
-deploy-api:
-	jitsu deploy -c
-	rm lib/server.js
-
-deploy-static:
+deploy:
 	harp compile
 	git add www
 	git commit -am 'Release'
@@ -16,4 +12,3 @@ deploy-static:
 icons:
 	grep -RhEo 'ion-[a-zA-Z\-]*' public/ | sort | uniq
 
-deploy: deploy-api deploy-static
