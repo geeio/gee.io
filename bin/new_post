@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+require 'json'
+require 'multi_json'
+require 'fileutils'
+
+title = ARGV.join(' ')
+title_slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+puts title_slug
+
+
+data = File.open('public/blog/_data.json') {|f| JSON.load(f.read) }
+data[title_slug] = {
+  title: title,
+  date: Date.today
+}
+File.open('public/blog/_data.json', 'w') do |f|
+  f.write MultiJson.dump(data, pretty: true)
+end
+FileUtils.touch("public/blog/#{title_slug}.jade")
