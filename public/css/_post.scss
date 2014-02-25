@@ -1,0 +1,17 @@
+$desktop: new-breakpoint(min-width 768px 12);
+$tablet: new-breakpoint(max-width 768px 1);
+
+.post-wrapper {
+  max-width: 100%;
+  font-size: 18px;
+  padding: 0 10px;
+  margin: auto;
+
+  @include media($desktop) {
+    max-width: 900px;
+  }
+
+  @include media($tablet) {
+    display: block;
+  }
+}

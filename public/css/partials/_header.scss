@@ -33,6 +33,7 @@ header.page-header {
   ul {
     float: right;
     @include list-inline;
+    line-height: 40px;
     li {
       vertical-align: middle;
     }
