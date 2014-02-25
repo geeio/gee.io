@@ -1,0 +1,13 @@
+mixin link_list(links, sep, last_sep)
+  - sep = sep || ', '
+  - last_sep = last_sep || 'or'
+  - last_sep = ' ' + last_sep + ' '
+  - var last = links.pop()
+  - var rest = links.slice()
+
+  - each link, i in rest
+    a(href="#{link.url}", target="_blank")= link.title
+    if rest.length > 1
+      = sep
+  = last_sep
+  a(href="#{last.url}", target="_blank")= last.title

@@ -1,0 +1,17 @@
+section.panel {
+  @include outer-container;
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  article {
+    @include media(max-width em(400)) {
+      @include span-columns(12);
+    }
+    @include media(min-width em(401)) {
+      @include span-columns(6);
+    }
+
+  }
+}

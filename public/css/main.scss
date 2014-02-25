@@ -4,18 +4,17 @@
 @import "vendor/bitters/bitters";
 @import "vendor/ionicons";
 @import "components/harp-neat/scss/neat";
-
-
-
 @import "partials/gist";
 @import "partials/header";
 @import "partials/footer";
 @import "partials/contact_form";
 @import "post";
+@import "index";
+
+
 .wrapper {
   margin: 0 40px
 }
-
 
 .btn {
   @include button(#38dabb);
