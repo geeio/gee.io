@@ -5,9 +5,10 @@ setup:
 
 deploy:
 	./node_modules/.bin/harp compile
-	git add www
-	git commit -am 'Release'
-	git push gh `git subtree split --prefix www master`:master --force
+	divshot push
+
+promote:
+	divshot promote development production
 
 icons:
 	grep -RhEo 'ion-[a-zA-Z\-]*' public/ | sort | uniq
