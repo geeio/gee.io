@@ -3,7 +3,7 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "/src/gee.io",
+			"path": "/src/gee/gee.io",
       "folder_exclude_patterns": ["components", "node_modules", "www"]
 		}
 	]

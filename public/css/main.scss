@@ -15,7 +15,9 @@
 .wrapper {
   margin: 0 40px
 }
-
+.clearfix {
+  @include clearfix;
+}
 .btn {
   @include button(#38dabb);
   line-height: 1em;
