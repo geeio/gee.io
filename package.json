@@ -20,7 +20,7 @@
   "dependencies": {
     "feathers": "~0.3.0",
     "coffee-script": "1.7.1",
-    "harp": "GeorgeErickson/harp"
+    "harp": ""
   },
   "subdomain": "gee",
   "domains": [
