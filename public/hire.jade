@@ -13,14 +13,12 @@ mixin input(opts)
 
 h3.page-title Hire gee.io
 .contact
-  form(accept-charset='UTF-8', autocomplete='off', enctype='multipart/form-data', method='post', action='https://geeio.wufoo.com/forms/mw0prvd0td06vo/#public')
-    input(type='hidden', name='idstamp', value='gqxF27AqWsa9w+V3yoz9Nov/BP8DG6Mh7XbdKEYai8w=')
-
-    +input({name: 'Field1', icon: 'ion-person'})(type='text', placeholder='What is your name?')
-    +input({name: 'Field2', icon: 'ion-email'})(type='email', placeholder='What is your email address?')
-    +input({name: 'Field5', icon: 'ion-ios7-telephone'})(type='tel', placeholder='What is your phone number?')
-    +input({name: 'Field6', icon: 'ion-help'})(type='textarea', placeholder='What do you want to hire me for?')
-    +input({name: 'Field8', icon: 'ion-pricetag'})(type='text', placeholder='What is your budget?')
+  form(accept-charset='UTF-8', autocomplete='off', name='hire', action='thanks', netlify)
+    +input({name: 'name', icon: 'ion-person'})(type='text', placeholder='What is your name?')
+    +input({name: 'email', icon: 'ion-email'})(type='email', placeholder='What is your email address?')
+    +input({name: 'phone', icon: 'ion-ios7-telephone'})(type='tel', placeholder='What is your phone number?')
+    +input({name: 'what', icon: 'ion-help'})(type='textarea', placeholder='What do you want to hire me for?')
+    +input({name: 'budget', icon: 'ion-pricetag'})(type='text', placeholder='What is your budget?')
     .clearfix
       input(name='saveForm', type='submit', value='Submit')
 
