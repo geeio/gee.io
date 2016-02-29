@@ -3,8 +3,7 @@
     "lang": {
       "realtime": [
         {"title":"Node.js","url":"http://nodejs.org/"},
-        {"title":"Go","url":"http://golang.org/"},
-        {"title":"Erlang","url":"http://www.erlang.org/"}
+        {"title":"Go","url":"http://golang.org/"}
       ],
       "js": [
         {"title":"Angular.js","url":"http://angularjs.org/"},
