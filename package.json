@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "",
-    "start": "./node_modules/.bin/coffee lib/server.coffee"
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -18,8 +17,6 @@
   },
   "homepage": "https://github.com/geeio/gee.io",
   "dependencies": {
-    "feathers": "~0.3.0",
-    "coffee-script": "1.7.1",
     "harp": ""
   },
   "subdomain": "gee",
@@ -29,12 +26,5 @@
   ],
   "engines": {
     "node": "0.10.x"
-  },
-  "devDependencies": {
-    "chai": "~1.8.1",
-    "supertest": "~0.8.2",
-    "nock": "~0.27.1",
-    "mocha": "",
-    "protractor": "~0.17.0"
   }
 }
